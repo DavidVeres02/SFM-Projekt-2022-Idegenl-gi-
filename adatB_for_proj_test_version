@@ -1,0 +1,78 @@
+USE [ETLAP]
+GO
+
+/****** Object:  Table [dbo].[rendeles]    Script Date: 2022.03.25. 13:43:17 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TABLE [dbo].[etlap](
+    [id] [bigint] IDENTITY(1,1) NOT NULL,
+    [nev] [varchar](50) NOT NULL,
+    [leiras] [varchar](250) NOT NULL,
+    [ar] [numeric](18, 6) NOT NULL,
+    [statusz] [int] NOT NULL,
+ CONSTRAINT [pk_etlap_id] PRIMARY KEY CLUSTERED
+(
+    [id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[felhasznalo](
+    [id] [bigint] IDENTITY(1,1) NOT NULL,
+    [user_name] [varchar](20) NOT NULL,
+    [password] [varchar](20) NOT NULL,
+    [statusz] [int] NOT NULL
+) ON [PRIMARY]
+GO
+
+
+CREATE TABLE [dbo].[vevo](
+    [id] [bigint] IDENTITY(1,1) NOT NULL,
+    [rendelo_neve] [nvarchar](100) NOT NULL,
+    [rendelo_cim] [nvarchar](100) NOT NULL,
+    [rendelo_telefon] [nvarchar](20) NOT NULL,
+    [statusz] [int] NOT NULL,
+ CONSTRAINT [pk_vevo_id] PRIMARY KEY CLUSTERED
+(
+    [id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+CREATE TABLE [dbo].[statusz](
+    [id] [bigint] NOT NULL,
+    [leiras] [varchar](10) NOT NULL,
+ CONSTRAINT [pk_statusz_id] PRIMARY KEY CLUSTERED
+(
+    [id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+
+
+CREATE TABLE [dbo].[rendeles](
+    [id] [bigint] IDENTITY(1,1) NOT NULL,
+    [etlap_id] [bigint] NOT NULL,
+    [rendelo_id] [bigint] NOT NULL,
+    [statusz] [bigint] NOT NULL
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[rendeles]  WITH CHECK ADD FOREIGN KEY([etlap_id])
+REFERENCES [dbo].[etlap] ([id])
+GO
+
+ALTER TABLE [dbo].[rendeles]  WITH CHECK ADD FOREIGN KEY([rendelo_id])
+REFERENCES [dbo].[vevo] ([id])
+GO
+
+ALTER TABLE [dbo].[rendeles]  WITH CHECK ADD FOREIGN KEY([statusz])
+REFERENCES [dbo].[statusz] ([id])
+GO
