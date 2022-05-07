@@ -1,5 +1,7 @@
 package hu.unideb.inf;
 
+import hu.unideb.inf.model.JPAUsersDAO;
+import hu.unideb.inf.model.Users;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -13,10 +15,16 @@ import java.io.IOException;
 public class FXMLRegPageController {
 
     @FXML
-    private TextField pass;
+    private TextField passw;
 
     @FXML
-    private TextField user;
+    private TextField usern;
+
+    @FXML
+    private TextField gname;
+
+    @FXML
+    private TextField sname;
 
     @FXML
     private Button ButtonBack;
@@ -38,6 +46,17 @@ public class FXMLRegPageController {
 
     @FXML
     void HandledRegButtonPushed(ActionEvent event) throws IOException {
+        JPAUsersDAO usersDAO = new JPAUsersDAO();
+        Users user = new Users();
+        user.setSname(sname.getText());
+        user.setGname(gname.getText());
+        user.setUsername(usern.getText());
+        user.setPassword(passw.getText());
+        usersDAO.saveUser(user);
+        toLogin();
+    }
+
+    void toLogin() throws IOException {
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/FXMLLogPage.fxml"));
         Scene scene = new Scene(loader.load());
         Stage stage = new Stage();

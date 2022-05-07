@@ -2,11 +2,27 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMainPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMainPageController">
    <children>
-      <Button fx:id="ButtonRegis" layoutX="121.0" layoutY="223.0" mnemonicParsing="false" onAction="#HandledRegButtonPushed" text="Regisztráció" />
-      <Button fx:id="ButtonLogin" layoutX="256.0" layoutY="223.0" mnemonicParsing="false" onAction="#HandledLogButtonPushed" text="Bejelentkezés" />
-      <Button layoutX="422.0" layoutY="223.0" mnemonicParsing="false" onAction="#HandledGueButtonPushed" text="Vendég" />
+      <Button fx:id="ButtonRegis" layoutX="79.0" layoutY="223.0" mnemonicParsing="false" onAction="#HandledRegButtonPushed" text="Regisztráció">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Button>
+      <Button fx:id="ButtonLogin" layoutX="239.0" layoutY="220.0" mnemonicParsing="false" onAction="#HandledLogButtonPushed" text="Bejelentkezés">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Button>
+      <Button layoutX="406.0" layoutY="220.0" mnemonicParsing="false" onAction="#HandledGueButtonPushed" text="Vendég">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font></Button>
+      <Text layoutX="200.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kezdőlap">
+         <font>
+            <Font name="Arial" size="48.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

@@ -1,18 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLRegPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: orange;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLRegPageController">
    <children>
-      <TextField fx:id="user" layoutX="226.0" layoutY="120.0" />
-      <TextField fx:id="pass" layoutX="226.0" layoutY="212.0" />
-      <Text layoutX="258.0" layoutY="116.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév" />
-      <Text layoutX="276.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó" />
-      <Button fx:id="ButtonBack" layoutX="111.0" layoutY="299.0" mnemonicParsing="false" onAction="#BackPushed" text="Vissza" />
-      <Button fx:id="ButtonRegis" layoutX="441.0" layoutY="299.0" mnemonicParsing="false" onAction="#HandledRegButtonPushed" text="Regisztrál" />
-      <Text layoutX="50.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztrációs ablak" />
+      <TextField fx:id="usern" layoutX="233.0" layoutY="204.0" />
+      <Text layoutX="251.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font></Text>
+      <Text layoutX="285.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font></Text>
+      <Button fx:id="ButtonBack" layoutX="178.0" layoutY="326.0" mnemonicParsing="false" onAction="#BackPushed" text="Vissza">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Button fx:id="ButtonRegis" layoutX="366.0" layoutY="326.0" mnemonicParsing="false" onAction="#HandledRegButtonPushed" text="Regisztrál">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font></Button>
+      <Text layoutX="208.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font></Text>
+      <Text layoutX="177.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vezetéknév">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="382.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keresztnév">
+         <font>
+            <Font name="Times New Roman Italic" size="18.0" />
+         </font>
+      </Text>
+      <TextField fx:id="sname" layoutX="142.0" layoutY="145.0" />
+      <TextField fx:id="gname" layoutX="347.0" layoutY="145.0" />
+      <PasswordField fx:id="passw" layoutX="233.0" layoutY="258.0" />
    </children>
 </AnchorPane>
