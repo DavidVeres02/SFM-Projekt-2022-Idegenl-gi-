@@ -1,0 +1,10 @@
+#hatter{
+    -fx-background-color:green;
+}
+.button:hover{
+    -fx-background-color:black;
+    -fx-text-fill:white;
+}
+.button:pressed{
+    -fx-background-color:gray;
+}

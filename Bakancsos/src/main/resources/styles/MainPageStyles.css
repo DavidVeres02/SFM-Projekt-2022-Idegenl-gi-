@@ -1,0 +1,12 @@
+#hatter{
+    -fx-background-color:red;
+}
+.button:hover{
+    -fx-background-color:black;
+    -fx-text-fill:white;
+    -fx-font-weight: bold;
+}
+.button:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color:gray;
+}
