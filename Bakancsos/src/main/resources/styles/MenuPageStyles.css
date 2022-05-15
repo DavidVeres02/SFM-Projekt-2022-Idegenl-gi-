@@ -1,5 +1,5 @@
 #hatter{
-    -fx-background-color:blue;
+    -fx-background-image: url("boots.jpg");
 }
 .button:hover{
     -fx-font-weight: bold;

@@ -1,5 +1,8 @@
 #hatter{
-    -fx-background-color:green;
+    -fx-background-color: #f6ae5e;
+    -fx-background-image: url("userlog.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
 }
 .button:hover{
     -fx-font-weight: bold;

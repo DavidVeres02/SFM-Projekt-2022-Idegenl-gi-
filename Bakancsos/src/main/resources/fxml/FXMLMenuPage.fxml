@@ -1,257 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="hatter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="600.0" stylesheets="@../styles/MenuPageStyles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMenuPageController">
-   <children>
-      <Text fill="WHITE" layoutX="224.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendelés">
-         <font>
-            <Font name="Arial" size="36.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="30.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Főételek">
-         <font>
-            <Font name="System Italic" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="30.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desszert">
-         <font>
-            <Font name="System Italic" size="18.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="30.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Italok">
-         <font>
-            <Font name="System Italic" size="18.0" />
-         </font>
-      </Text>
-      <Button layoutX="207.0" layoutY="890.0" mnemonicParsing="false" text="Tovább a megrendeléshez">
-         <font>
-            <Font name="Arial" size="14.0" />
-         </font>
-      </Button>
-      <Text fill="WHITE" layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Levesek">
-         <font>
-            <Font name="System Italic" size="18.0" />
-         </font>
-      </Text>
-      <Button layoutX="479.0" layoutY="119.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="119.0" mnemonicParsing="false" text="-" />
-      <Text layoutX="551.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Button layoutX="479.0" layoutY="145.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="145.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="171.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="171.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="197.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="197.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="223.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="223.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="249.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="249.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="310.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="310.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="336.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="336.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="362.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="362.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="388.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="388.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="414.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="414.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="440.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="440.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="511.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="511.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="537.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="537.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="563.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="563.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="589.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="589.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="615.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="615.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="641.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="641.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="705.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="705.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="731.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="731.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="757.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="757.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="783.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="783.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="809.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="809.0" mnemonicParsing="false" text="-" />
-      <Button layoutX="479.0" layoutY="835.0" mnemonicParsing="false" text="+" />
-      <Button layoutX="517.0" layoutY="835.0" mnemonicParsing="false" text="-" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gulyásleves csipedettel, cipóban tálalva" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juhtúrós-kapros sztrappacska" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fokhagymakrémleves pirított kenyérkockával" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borsóleves vajgaluskával " />
-      <Text fill="WHITE" layoutX="40.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Újházi tyúkhúsleves" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hideg gyümölcsleves idénygyümölcsökkel" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paradicsomleves bazsalikommal, betűtésztával" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mátrai borzaska, petrezselymes burgonyával" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mézes-mustáros csirkemell, rizzsel" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vörösboros marhapörkölt, nokedli" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szabolcsi töltött káposzta" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Túrós csusza, harcsapaprikással" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gundel palacsinta, csokoládé fagylalttal" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meggyes-mákos guba, vaníliasodóval" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gesztenyepüré, tejszínhabbal" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Somlói galuska" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feketeerdő pohárkrém, tejszínhabbal" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobostorta" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Házi limonádék (citrom, eper, málna)" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdítőitalok (Fanta, Cola, Nestea)" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="774.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szóda" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="800.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borok (vörös, fehér, rosé)" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pálinkák (szilva, körte, meggy)" />
-      <Text fill="WHITE" layoutX="40.0" layoutY="852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tea, kávé" />
-      <Text layoutX="551.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="774.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="800.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="551.0" layoutY="852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text fill="WHITE" layoutX="380.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1390 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1890 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2090 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2090 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2690 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2690 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2390 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="590 Ft / 0.5l">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="490 Ft / 0.33l">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="390 Ft / 0.5l">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="690 Ft / 0.25l">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft / 8cl">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="380.0" layoutY="851.0" strokeType="OUTSIDE" strokeWidth="0.0" text="590 Ft / csésze">
-         <font>
-            <Font name="System Bold Italic" size="12.0" />
-         </font>
-      </Text>
-   </children>
-</AnchorPane>
+
+<ScrollPane prefHeight="942.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMenuPageController">
+   <content>
+      <AnchorPane id="hatter" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="600.0" stylesheets="@../styles/MenuPageStyles.css">
+         <children>
+            <Text fill="WHITE" layoutX="224.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendelés">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Főételek">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desszert">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Italok">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <Button layoutX="207.0" layoutY="890.0" mnemonicParsing="false" text="Tovább a megrendeléshez">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
+            <Text fill="WHITE" layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Levesek">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="40.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gulyásleves csipedettel, cipóban tálalva" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juhtúrós-kapros sztrappacska" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fokhagymakrémleves pirított kenyérkockával" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borsóleves vajgaluskával " />
+            <Text fill="WHITE" layoutX="40.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Újházi tyúkhúsleves" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hideg gyümölcsleves idénygyümölcsökkel" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paradicsomleves bazsalikommal, betűtésztával" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mátrai borzaska, petrezselymes burgonyával" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mézes-mustáros csirkemell, rizzsel" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vörösboros marhapörkölt, nokedli" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szabolcsi töltött káposzta" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Túrós csusza, harcsapaprikással" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gundel palacsinta, csokoládé fagylalttal" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meggyes-mákos guba, vaníliasodóval" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gesztenyepüré, tejszínhabbal" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Somlói galuska" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feketeerdő pohárkrém, tejszínhabbal" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobostorta" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Házi limonádék (citrom, eper, málna)" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdítőitalok (Fanta, Cola, Nestea)" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="774.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szóda" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="800.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borok (vörös, fehér, rosé)" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pálinkák (szilva, körte, meggy)" />
+            <Text fill="WHITE" layoutX="40.0" layoutY="852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tea, kávé" />
+            <Text fill="WHITE" layoutX="380.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1390 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1890 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2090 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2090 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2690 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2690 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2390 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="590 Ft / 0.5l">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="490 Ft / 0.33l">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="390 Ft / 0.5l">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="690 Ft / 0.25l">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft / 8cl">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="851.0" strokeType="OUTSIDE" strokeWidth="0.0" text="590 Ft / csésze">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="222.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
+               <font>
+                  <Font name="Arial Italic" size="18.0" />
+               </font>
+            </Text>
+            <Label fx:id="name" layoutX="16.0" layoutY="39.0" text="Label" />
+            <ChoiceBox fx:id="alev" layoutX="502.0" layoutY="118.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="blev" layoutX="502.0" layoutY="143.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="clev" layoutX="502.0" layoutY="170.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="dlev" layoutX="502.0" layoutY="196.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="elev" layoutX="502.0" layoutY="221.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="flev" layoutX="502.0" layoutY="247.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="atel" layoutX="502.0" layoutY="309.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="btel" layoutX="502.0" layoutY="335.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ctel" layoutX="502.0" layoutY="361.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="dtel" layoutX="502.0" layoutY="387.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="etel" layoutX="502.0" layoutY="413.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ftel" layoutX="502.0" layoutY="438.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ades" layoutX="502.0" layoutY="509.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="bdes" layoutX="502.0" layoutY="536.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="cdes" layoutX="502.0" layoutY="562.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ddes" layoutX="502.0" layoutY="588.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="edes" layoutX="502.0" layoutY="614.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="fdes" layoutX="502.0" layoutY="640.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="audi" layoutX="502.0" layoutY="704.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="budi" layoutX="502.0" layoutY="730.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="cudi" layoutX="502.0" layoutY="755.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="dudi" layoutX="502.0" layoutY="781.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="eudi" layoutX="502.0" layoutY="808.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="fudi" layoutX="502.0" layoutY="833.0" prefHeight="26.0" prefWidth="21.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

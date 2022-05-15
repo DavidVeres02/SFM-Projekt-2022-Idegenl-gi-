@@ -1,5 +1,8 @@
 #hatter{
-    -fx-background-color:orange;
+    -fx-background-image: url("adduser.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-color: #f6ae5e;
 }
 .button:hover{
     -fx-background-color:black;

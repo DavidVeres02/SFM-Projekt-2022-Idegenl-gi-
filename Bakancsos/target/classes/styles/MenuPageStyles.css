@@ -1,3 +1,12 @@
-.button {
+#hatter{
+    -fx-background-image: url("boots.jpg");
+}
+.button:hover{
     -fx-font-weight: bold;
+    -fx-background-color:black;
+    -fx-text-fill:white;
+}
+.button:pressed{
+    -fx-font-weight: bold;
+    -fx-background-color:gray;
 }
