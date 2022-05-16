@@ -8,7 +8,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <ScrollPane prefHeight="942.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMenuPageController">
    <content>
       <AnchorPane id="hatter" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="600.0" stylesheets="@../styles/MenuPageStyles.css">
@@ -33,7 +32,7 @@
                   <Font name="System Italic" size="18.0" />
                </font>
             </Text>
-            <Button layoutX="207.0" layoutY="890.0" mnemonicParsing="false" text="Tovább a megrendeléshez">
+            <Button fx:id="buttinOrder" layoutX="328.0" layoutY="891.0" mnemonicParsing="false" onAction="#HandledOrderButtonPushed" text="Tovább a megrendeléshez">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
@@ -196,27 +195,32 @@
             <ChoiceBox fx:id="alev" layoutX="502.0" layoutY="118.0" prefHeight="26.0" prefWidth="21.0" />
             <ChoiceBox fx:id="blev" layoutX="502.0" layoutY="143.0" prefHeight="26.0" prefWidth="21.0" />
             <ChoiceBox fx:id="clev" layoutX="502.0" layoutY="170.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="196.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="221.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="247.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="jfoe" layoutX="502.0" layoutY="309.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="mfoe" layoutX="502.0" layoutY="335.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="cfoe" layoutX="502.0" layoutY="361.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="387.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="413.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="438.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="gdes" layoutX="502.0" layoutY="509.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="mdes" layoutX="502.0" layoutY="536.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="tdes" layoutX="502.0" layoutY="562.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="588.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="614.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="640.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="ludi" layoutX="502.0" layoutY="704.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="uudi" layoutX="502.0" layoutY="730.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="sudi" layoutX="502.0" layoutY="755.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="781.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="808.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox layoutX="502.0" layoutY="833.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="dlev" layoutX="502.0" layoutY="196.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="elev" layoutX="502.0" layoutY="221.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="flev" layoutX="502.0" layoutY="247.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="atel" layoutX="502.0" layoutY="309.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="btel" layoutX="502.0" layoutY="335.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ctel" layoutX="502.0" layoutY="361.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="dtel" layoutX="502.0" layoutY="387.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="etel" layoutX="502.0" layoutY="413.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ftel" layoutX="502.0" layoutY="438.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ades" layoutX="502.0" layoutY="509.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="bdes" layoutX="502.0" layoutY="536.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="cdes" layoutX="502.0" layoutY="562.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="ddes" layoutX="502.0" layoutY="588.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="edes" layoutX="502.0" layoutY="614.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="fdes" layoutX="502.0" layoutY="640.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="audi" layoutX="502.0" layoutY="704.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="budi" layoutX="502.0" layoutY="730.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="cudi" layoutX="502.0" layoutY="755.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="dudi" layoutX="502.0" layoutY="781.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="eudi" layoutX="502.0" layoutY="808.0" prefHeight="26.0" prefWidth="21.0" />
+            <ChoiceBox fx:id="fudi" layoutX="502.0" layoutY="833.0" prefHeight="26.0" prefWidth="21.0" />
+            <Button fx:id="buttonVissza" layoutX="132.0" layoutY="891.0" mnemonicParsing="false" onAction="#HandledVisszaButtonPushed" text="Vissza">
+               <font>
+                  <Font name="Arial" size="14.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </content>

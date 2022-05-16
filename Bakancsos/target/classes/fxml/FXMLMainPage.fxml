@@ -19,12 +19,12 @@
          <font>
             <Font name="Arial" size="18.0" />
          </font></Button>
-      <Text layoutX="200.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kezdőlap">
+      <Text layoutX="199.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kezdőlap">
          <font>
             <Font name="Arial" size="48.0" />
          </font>
       </Text>
-      <Text layoutX="203.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
+      <Text layoutX="203.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
          <font>
             <Font name="Arial Italic" size="24.0" />
          </font>

@@ -9,8 +9,12 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.io.IOException;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +28,10 @@ public class FXMLMenuPageController {
     public static Label name_static;
 
     @FXML
+    private Button buttonOrder;
+    @FXML
+    private Button buttonVissza;
+    @FXML
     private AnchorPane mainPane;
     public static AnchorPane mainPane_static;
     private ObservableList <Integer> valasztas = FXCollections.observableArrayList(0, 1, 2, 3, 4, 5);
@@ -33,14 +41,481 @@ public class FXMLMenuPageController {
     public List<ChoiceBox> dessertchb = new ArrayList<>();
     public List<ChoiceBox> uditochb = new ArrayList<>();
 
+    //Gulyásleves
+    @FXML
+    private Label gulyasName;
+    public static Label gulyasName_static;
+
+    @FXML
+    private Label gulyasPrice;
+    public static Label gulyasPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> gulyascb;
+
+    //Borsóleves
+    @FXML
+    private Label borsoName;
+    public static Label borsoName_static;
+
+    @FXML
+    private Label borsoPrice;
+    public static Label borsoPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> borsocb;
+
+    //Hagymaleves
+    @FXML
+    private Label hagymaName;
+    public static Label hagymaName_static;
+
+    @FXML
+    private Label hagymaPrice;
+    public static Label hagymaPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> hagymacb;
+
+    //űjházi húsleves
+    @FXML
+    private Label ujhaziName;
+    public static Label ujhaziName_static;
+
+    @FXML
+    private Label ujhaziPrice;
+    public static Label ujhaziPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> ujhazicb;
+
+    //Gyümölcsleves
+    @FXML
+    private Label gyumolcsName;
+    public static Label gyumolcsName_static;
+
+    @FXML
+    private Label gyumolcsPrice;
+    public static Label gyumolcsPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> gyumolcscb;
+
+    //Paradicsomleves
+    @FXML
+    private Label paradicsName;
+    public static Label paradicsName_static;
+
+    @FXML
+    private Label paradicsPrice;
+    public static Label paradicsPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> paradicscb;
+
+    //Juhtúrós sztrappacska
+    @FXML
+    private Label sztraoaName;
+    public static Label sztraoaName_static;
+
+    @FXML
+    private Label sztraoaPrice;
+    public static Label sztraoaPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> sztraoacb;
+
+    //Mátrai borzaska
+    @FXML
+    private Label matraiName;
+    public static Label matraiName_static;
+
+    @FXML
+    private Label matraiPrice;
+    public static Label matraiPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> matraicb;
+
+    //MM csirke
+    @FXML
+    private Label mmcsirkeName;
+    public static Label mmcsirkeName_static;
+
+    @FXML
+    private Label mmcsirkePrice;
+    public static Label mmcsirkePrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> mmcsirkecb;
+
+    //Marhapörkölt
+    @FXML
+    private Label marhaName;
+    public static Label marhaName_static;
+
+    @FXML
+    private Label marhaPrice;
+    public static Label marhaPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> marhacb;
+
+    //Töltöttkáposzta
+    @FXML
+    private Label toltottName;
+    public static Label toltottName_static;
+
+    @FXML
+    private Label toltottPrice;
+    public static Label toltottPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> toltottcb;
+
+    //Túrós csusza
+    @FXML
+    private Label csuszaName;
+    public static Label csuszaName_static;
+
+    @FXML
+    private Label csuszaPrice;
+    public static Label csuszaPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> csuszacb;
+
+    //Gundel palacsinta
+    @FXML
+    private Label gundelpName;
+    public static Label gundelpName_static;
+
+    @FXML
+    private Label gundelpPrice;
+    public static Label gundelpPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> gundelcb;
+
+    //Mákosguba
+    @FXML
+    private Label makosName;
+    public static Label makosName_static;
+
+    @FXML
+    private Label makosPrice;
+    public static Label makosPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> makoscb;
+
+    //Gesztenyepüré
+    @FXML
+    private Label pureeName;
+    public static Label pureeName_static;
+
+    @FXML
+    private Label pureePrice;
+    public static Label pureePrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> pureecb;
+
+    //Somlói galuska
+    @FXML
+    private Label somloiName;
+    public static Label somloiName_static;
+
+    @FXML
+    private Label somloiPrice;
+    public static Label somloiPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> somloicb;
+
+    //Feketeerdő pohárkrém
+    @FXML
+    private Label poharkName;
+    public static Label poharkName_static;
+
+    @FXML
+    private Label poharkPrice;
+    public static Label poharkPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> poharkcb;
+
+    //Dobostorta
+    @FXML
+    private Label dobostName;
+    public static Label dobostName_static;
+
+    @FXML
+    private Label dobostPrice;
+    public static Label dobostPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> dobostcb;
+
+    //Házi limonádék
+    @FXML
+    private Label limonadeName;
+    public static Label limonadeName_static;
+
+    @FXML
+    private Label limonadePrice;
+    public static Label limonadePrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> limonadecb;
+
+    //Üdítőitalok
+    @FXML
+    private Label uditoekName;
+    public static Label uditoekName_static;
+
+    @FXML
+    private Label uditoekPrice;
+    public static Label uditoekPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> uditoekcb;
+
+    //Szóda
+    @FXML
+    private Label sodaName;
+    public static Label sodaName_static;
+
+    @FXML
+    private Label sodaPrice;
+    public static Label sodaPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> sodacb;
+
+    //Borok
+    @FXML
+    private Label borokName;
+    public static Label borokName_static;
+
+    @FXML
+    private Label borokPrice;
+    public static Label borokPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> borokcb;
+
+    //Pálinkák
+    @FXML
+    private Label palinkaName;
+    public static Label palinkaName_static;
+
+    @FXML
+    private Label palinkaPrice;
+    public static Label palinkaPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> palinkacb;
+
+    //Forró italok
+    @FXML
+    private Label forrokName;
+    public static Label forrokName_static;
+
+    @FXML
+    private Label forrokPrice;
+    public static Label forrokPrice_static;
+
+    @FXML
+    private ChoiceBox<Integer> forrokcb;
+
     @FXML
     public void initialize()
     {
         name_static = name;
         mainPane_static = mainPane;
-        alev.setValue(0);
-        alev.setItems(valasztas);
-        //etel.addItem(alev);
+
+        gulyascb.setValue(0);
+        gulyascb.setItems(valasztas);
+        leveschb.add(gulyascb);
+
+        borsocb.setValue(0);
+        borsocb.setItems(valasztas);
+        leveschb.add(borsocb);
+
+        hagymacb.setValue(0);
+        hagymacb.setItems(valasztas);
+        leveschb.add(hagymacb);
+
+        ujhazicb.setValue(0);
+        ujhazicb.setItems(valasztas);
+        leveschb.add(ujhazicb);
+
+        gyumolcscb.setValue(0);
+        gyumolcscb.setItems(valasztas);
+        leveschb.add(gyumolcscb);
+
+        paradicscb.setValue(0);
+        paradicscb.setItems(valasztas);
+        leveschb.add(paradicscb);
+
+        //
+
+        sztraoacb.setValue(0);
+        sztraoacb.setItems(valasztas);
+        etelchb.add(sztraoacb);
+
+        matraicb.setValue(0);
+        matraicb.setItems(valasztas);
+        etelchb.add(matraicb);
+
+        mmcsirkecb.setValue(0);
+        mmcsirkecb.setItems(valasztas);
+        etelchb.add(mmcsirkecb);
+
+        marhacb.setValue(0);
+        marhacb.setItems(valasztas);
+        etelchb.add(marhacb);
+
+        toltottcb.setValue(0);
+        toltottcb.setItems(valasztas);
+        etelchb.add(toltottcb);
+
+        csuszacb.setValue(0);
+        csuszacb.setItems(valasztas);
+        etelchb.add(csuszacb);
+
+        //
+
+        gundelcb.setValue(0);
+        gundelcb.setItems(valasztas);
+        dessertchb.add(gundelcb);
+
+        makoscb.setValue(0);
+        makoscb.setItems(valasztas);
+        dessertchb.add(makoscb);
+
+        pureecb.setValue(0);
+        pureecb.setItems(valasztas);
+        dessertchb.add(pureecb);
+
+        somloicb.setValue(0);
+        somloicb.setItems(valasztas);
+        dessertchb.add(somloicb);
+
+        poharkcb.setValue(0);
+        poharkcb.setItems(valasztas);
+        dessertchb.add(poharkcb);
+
+        dobostcb.setValue(0);
+        dobostcb.setItems(valasztas);
+        dessertchb.add(dobostcb);
+
+        //
+
+        limonadecb.setValue(0);
+        limonadecb.setItems(valasztas);
+        uditochb.add(limonadecb);
+
+        uditoekcb.setValue(0);
+        uditoekcb.setItems(valasztas);
+        uditochb.add(uditoekcb);
+
+        sodacb.setValue(0);
+        sodacb.setItems(valasztas);
+        uditochb.add(sodacb);
+
+        borokcb.setValue(0);
+        borokcb.setItems(valasztas);
+        uditochb.add(borokcb);
+
+        palinkacb.setValue(0);
+        palinkacb.setItems(valasztas);
+        uditochb.add(palinkacb);
+
+        forrokcb.setValue(0);
+        forrokcb.setItems(valasztas);
+        uditochb.add(forrokcb);
+
+        //
+
+        gulyasName_static = gulyasName;
+        gulyasPrice_static = gulyasPrice;
+
+        borsoName_static = borsoName;
+        borsoPrice_static = borsoPrice;
+
+        hagymaName_static = hagymaName;
+        hagymaPrice_static = hagymaPrice;
+
+        ujhaziName_static = ujhaziName;
+        ujhaziPrice_static = ujhaziPrice;
+
+        gyumolcsName_static = gyumolcsName;
+        gyumolcsPrice_static = gyumolcsPrice;
+
+        paradicsName_static = paradicsName;
+        paradicsPrice_static = paradicsPrice;
+
+        //
+
+        sztraoaName_static = sztraoaName;
+        sztraoaPrice_static = sztraoaPrice;
+
+        matraiName_static = matraiName;
+        matraiPrice_static = matraiPrice;
+
+        mmcsirkeName_static = mmcsirkeName;
+        mmcsirkePrice_static = mmcsirkePrice;
+
+        marhaName_static = marhaName;
+        marhaPrice_static = marhaPrice;
+
+        toltottName_static = toltottName;
+        toltottPrice_static = toltottPrice;
+
+        csuszaName_static = csuszaName;
+        csuszaPrice_static = csuszaPrice;
+
+        //
+
+        gundelpName_static = gundelpName;
+        gundelpPrice_static = gundelpPrice;
+
+        makosName_static = makosName;
+        makosPrice_static = makosPrice;
+
+        pureeName_static = pureeName;
+        pureePrice_static = pureePrice;
+
+        somloiName_static = somloiName;
+        somloiPrice_static = somloiPrice;
+
+        poharkName_static = poharkName;
+        poharkPrice_static = poharkPrice;
+
+        dobostName_static = dobostName;
+        dobostPrice_static = dobostPrice;
+
+        //
+
+        limonadeName_static = limonadeName;
+        limonadePrice_static = limonadePrice;
+
+        uditoekName_static = uditoekName;
+        uditoekPrice_static = uditoekPrice;
+
+        sodaName_static = sodaName;
+        sodaPrice_static = sodaPrice;
+
+        borokName_static = borokName;
+        borokPrice_static = borokPrice;
+
+        palinkaName_static = palinkaName;
+        palinkaPrice_static = palinkaPrice;
+
+        forrokName_static = forrokName;
+        forrokPrice_static = forrokPrice;
     }
 
     @FXML
@@ -188,8 +663,8 @@ public class FXMLMenuPageController {
         FXMLMenuPageController.ctelPrice_static.setText(mezes.getPrice() + "Ft");
 
         Etel voros = new Etel("Vörösboros marhapörkölt, nokedlivel", 2690);
-        etelek.add(voros);
         FXMLMenuPageController.dtelName_static.setText(voros.getName());
+        etelek.add(voros);
         FXMLMenuPageController.dtelPrice_static.setText(voros.getPrice() + "Ft");
 
         Etel szabolcsi = new Etel("Szabolcsi töltött káposzta", 2690);
@@ -362,5 +837,9 @@ public class FXMLMenuPageController {
         FXMLMenuPageController.fudiName_static.setText(forro.getName());
         FXMLMenuPageController.fudiPrice_static.setText(forro.getPrice() + "Ft / 0.2l");
     }
+    @FXML
+    void HandledOrderButtonPushed(ActionEvent event) throws IOException, SQLException {}
 
+    @FXML
+    void HandledVisszaButtonPushed(ActionEvent event) throws IOException, SQLException {}
 }

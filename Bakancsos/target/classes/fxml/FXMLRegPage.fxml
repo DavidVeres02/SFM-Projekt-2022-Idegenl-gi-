@@ -9,41 +9,41 @@
 
 <AnchorPane id="hatter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/RegPageStyles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLRegPageController">
    <children>
-      <TextField fx:id="usern" layoutX="233.0" layoutY="204.0" />
-      <Text fill="WHITE" layoutX="251.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév">
+      <TextField fx:id="usern" layoutX="241.0" layoutY="261.0" />
+      <Text layoutX="260.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
          </font></Text>
-      <Text fill="WHITE" layoutX="285.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó">
+      <Text layoutX="294.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jelszó">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
          </font></Text>
-      <Button fx:id="ButtonBack" layoutX="178.0" layoutY="326.0" mnemonicParsing="false" onAction="#BackPushed" text="Vissza">
+      <Button fx:id="ButtonBack" layoutX="177.0" layoutY="347.0" mnemonicParsing="false" onAction="#BackPushed" text="Vissza">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Button>
-      <Button fx:id="ButtonRegis" layoutX="366.0" layoutY="326.0" mnemonicParsing="false" onAction="#HandledRegButtonPushed" text="Regisztrál">
+      <Button fx:id="ButtonRegis" layoutX="454.0" layoutY="347.0" mnemonicParsing="false" onAction="#HandledRegButtonPushed" text="Regisztrál">
          <font>
             <Font name="Arial" size="14.0" />
          </font></Button>
-      <Text fill="WHITE" layoutX="208.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció">
+      <Text layoutX="217.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Regisztráció">
          <font>
             <Font name="Arial" size="36.0" />
          </font></Text>
-      <Text fill="WHITE" layoutX="177.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vezetéknév">
+      <Text layoutX="276.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vezetéknév">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="382.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keresztnév">
+      <Text layoutX="277.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Keresztnév">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
          </font>
       </Text>
-      <TextField fx:id="sname" layoutX="142.0" layoutY="145.0" />
-      <TextField fx:id="gname" layoutX="347.0" layoutY="145.0" />
-      <PasswordField fx:id="passw" layoutX="233.0" layoutY="258.0" />
-      <Text fill="WHITE" layoutX="229.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
+      <TextField fx:id="sname" layoutX="241.0" layoutY="123.0" />
+      <TextField fx:id="gname" layoutX="241.0" layoutY="174.0" />
+      <PasswordField fx:id="passw" layoutX="241.0" layoutY="308.0" />
+      <Text layoutX="238.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
          <font>
             <Font name="Arial Italic" size="18.0" />
          </font>

@@ -2,8 +2,16 @@ hu\unideb\inf\FXMLLogPageController.class
 hu\unideb\inf\Main.class
 hu\unideb\inf\model\JPAUsersDAO.class
 hu\unideb\inf\model\Users.class
+hu\unideb\inf\model\EtelDataReader.class
+hu\unideb\inf\model\Leves.class
+hu\unideb\inf\model\LevesDataReader.class
+hu\unideb\inf\model\Desszert.class
 hu\unideb\inf\model\UsersDAO.class
 hu\unideb\inf\FXMLRegPageController.class
 hu\unideb\inf\FXMLMainPageController.class
+hu\unideb\inf\model\Etel.class
 hu\unideb\inf\MainApp.class
 hu\unideb\inf\FXMLMenuPageController.class
+hu\unideb\inf\model\UditoDataReader.class
+hu\unideb\inf\model\DesszertDataReader.class
+hu\unideb\inf\model\Udito.class
