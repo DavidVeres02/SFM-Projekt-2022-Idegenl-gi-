@@ -5,223 +5,208 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane prefHeight="942.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMenuPageController">
-   <content>
-      <AnchorPane id="hatter" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="600.0" stylesheets="@../styles/MenuPageStyles.css">
-         <children>
-            <Text fill="WHITE" layoutX="224.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendelés">
-               <font>
-                  <Font name="Arial" size="36.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="30.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Főételek">
-               <font>
-                  <Font name="System Italic" size="18.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="30.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desszert">
-               <font>
-                  <Font name="System Italic" size="18.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="30.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Italok">
-               <font>
-                  <Font name="System Italic" size="18.0" />
-               </font>
-            </Text>
-            <Button fx:id="buttinOrder" layoutX="328.0" layoutY="891.0" mnemonicParsing="false" onAction="#HandledOrderButtonPushed" text="Tovább a megrendeléshez">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Button>
-            <Text fill="WHITE" layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Levesek">
-               <font>
-                  <Font name="System Italic" size="18.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="40.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gulyásleves csipedettel, cipóban tálalva" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Juhtúrós-kapros sztrappacska" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fokhagymakrémleves pirított kenyérkockával" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borsóleves vajgaluskával " />
-            <Text fill="WHITE" layoutX="40.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Újházi tyúkhúsleves" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hideg gyümölcsleves idénygyümölcsökkel" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Paradicsomleves bazsalikommal, betűtésztával" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mátrai borzaska, petrezselymes burgonyával" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mézes-mustáros csirkemell, rizzsel" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vörösboros marhapörkölt, nokedli" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szabolcsi töltött káposzta" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Túrós csusza, harcsapaprikással" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gundel palacsinta, csokoládé fagylalttal" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meggyes-mákos guba, vaníliasodóval" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gesztenyepüré, tejszínhabbal" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="606.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Somlói galuska" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Feketeerdő pohárkrém, tejszínhabbal" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dobostorta" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Házi limonádék (citrom, eper, málna)" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Üdítőitalok (Fanta, Cola, Nestea)" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="774.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Szóda" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="800.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Borok (vörös, fehér, rosé)" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pálinkák (szilva, körte, meggy)" />
-            <Text fill="WHITE" layoutX="40.0" layoutY="852.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tea, kávé" />
-            <Text fill="WHITE" layoutX="380.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1390 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="327.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1890 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2090 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2090 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2690 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2690 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="456.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2390 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="527.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1190 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="658.0" strokeType="OUTSIDE" strokeWidth="0.0" text="990 Ft">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="590 Ft / 0.5l">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="748.0" strokeType="OUTSIDE" strokeWidth="0.0" text="490 Ft / 0.33l">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="773.0" strokeType="OUTSIDE" strokeWidth="0.0" text="390 Ft / 0.5l">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="690 Ft / 0.25l">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="826.0" strokeType="OUTSIDE" strokeWidth="0.0" text="790 Ft / 8cl">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="380.0" layoutY="851.0" strokeType="OUTSIDE" strokeWidth="0.0" text="590 Ft / csésze">
-               <font>
-                  <Font name="System Bold Italic" size="12.0" />
-               </font>
-            </Text>
-            <Text fill="WHITE" layoutX="222.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
-               <font>
-                  <Font name="Arial Italic" size="18.0" />
-               </font>
-            </Text>
-            <Label fx:id="name" layoutX="16.0" layoutY="39.0" text="Label" />
-            <ChoiceBox fx:id="alev" layoutX="502.0" layoutY="118.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="blev" layoutX="502.0" layoutY="143.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="clev" layoutX="502.0" layoutY="170.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="dlev" layoutX="502.0" layoutY="196.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="elev" layoutX="502.0" layoutY="221.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="flev" layoutX="502.0" layoutY="247.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="atel" layoutX="502.0" layoutY="309.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="btel" layoutX="502.0" layoutY="335.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="ctel" layoutX="502.0" layoutY="361.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="dtel" layoutX="502.0" layoutY="387.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="etel" layoutX="502.0" layoutY="413.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="ftel" layoutX="502.0" layoutY="438.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="ades" layoutX="502.0" layoutY="509.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="bdes" layoutX="502.0" layoutY="536.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="cdes" layoutX="502.0" layoutY="562.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="ddes" layoutX="502.0" layoutY="588.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="edes" layoutX="502.0" layoutY="614.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="fdes" layoutX="502.0" layoutY="640.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="audi" layoutX="502.0" layoutY="704.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="budi" layoutX="502.0" layoutY="730.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="cudi" layoutX="502.0" layoutY="755.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="dudi" layoutX="502.0" layoutY="781.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="eudi" layoutX="502.0" layoutY="808.0" prefHeight="26.0" prefWidth="21.0" />
-            <ChoiceBox fx:id="fudi" layoutX="502.0" layoutY="833.0" prefHeight="26.0" prefWidth="21.0" />
-            <Button fx:id="buttonVissza" layoutX="132.0" layoutY="891.0" mnemonicParsing="false" onAction="#HandledVisszaButtonPushed" text="Vissza">
-               <font>
-                  <Font name="Arial" size="14.0" />
-               </font>
-            </Button>
-         </children>
-      </AnchorPane>
-   </content>
-</ScrollPane>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMenuPageController">
+   <children>
+      <ScrollPane prefHeight="584.0" prefWidth="619.0">
+         <content>
+            <AnchorPane id="hatter" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="950.0" prefWidth="604.0" stylesheets="@../styles/MenuPageStyles.css">
+               <children>
+                  <Text fill="WHITE" layoutX="224.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rendelés">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Főételek">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desszert">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Italok">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="buttonRendel" layoutX="328.0" layoutY="891.0" mnemonicParsing="false" text="Tovább a megrendeléshez">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Levesek">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="222.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
+                     <font>
+                        <Font name="Arial Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="name" layoutX="16.0" layoutY="39.0" prefHeight="18.0" prefWidth="168.0" textFill="WHITE" />
+                  <Button fx:id="buttonVissza" layoutX="132.0" layoutY="891.0" mnemonicParsing="false" text="Vissza">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Button>
+                  <GridPane layoutX="30.0" layoutY="118.0" prefHeight="146.0" prefWidth="498.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.2000457763672" minWidth="10.0" prefWidth="331.0000335693359" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.40003356933596" minWidth="0.0" prefWidth="128.7999938964844" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.3999938964844" minWidth="10.0" prefWidth="32.0000061035156" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="gulyasName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
+                        <Label fx:id="borsoName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
+                        <Label fx:id="gulyasPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
+                        <Label fx:id="borsoPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="hagymaName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
+                        <Label fx:id="hagymaPrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="ujhaziName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
+                        <Label fx:id="ujhaziPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="gyumolcsName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
+                        <Label fx:id="gyumolcsPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="paradicsName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
+                        <Label fx:id="paradicsPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ChoiceBox fx:id="gulyascb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
+                        <ChoiceBox fx:id="borsocb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ChoiceBox fx:id="hagymacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <ChoiceBox fx:id="ujhazicb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <ChoiceBox fx:id="gyumolcscb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <ChoiceBox fx:id="paradicscb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="30.0" layoutY="314.0" prefHeight="146.0" prefWidth="498.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.2000457763672" minWidth="10.0" prefWidth="331.0000335693359" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.40003356933596" minWidth="0.0" prefWidth="128.7999938964844" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.3999938964844" minWidth="10.0" prefWidth="32.0000061035156" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="sztraoaName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
+                        <Label fx:id="matraiName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
+                        <Label fx:id="sztraoaPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
+                        <Label fx:id="matraiPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="mmcsirkeName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
+                        <Label fx:id="mmcsirkePrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="marhaName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
+                        <Label fx:id="marhaPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="toltottName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
+                        <Label fx:id="toltottPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="csuszaName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
+                        <Label fx:id="csuszaPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ChoiceBox fx:id="sztraoacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
+                        <ChoiceBox fx:id="matraicb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ChoiceBox fx:id="mmcsirkecb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <ChoiceBox fx:id="marhacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <ChoiceBox fx:id="toltottcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <ChoiceBox fx:id="csuszacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="30.0" layoutY="509.0" prefHeight="146.0" prefWidth="498.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.2000457763672" minWidth="10.0" prefWidth="331.0000335693359" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.40003356933596" minWidth="0.0" prefWidth="128.7999938964844" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.3999938964844" minWidth="10.0" prefWidth="32.0000061035156" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="gundelpName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
+                        <Label fx:id="makosName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
+                        <Label fx:id="gundelpPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
+                        <Label fx:id="makosPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="pureeName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
+                        <Label fx:id="pureePrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="somloiName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
+                        <Label fx:id="somloiPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="poharkName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
+                        <Label fx:id="poharkPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="dobostName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
+                        <Label fx:id="dobostPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ChoiceBox fx:id="gundelcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
+                        <ChoiceBox fx:id="makoscb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ChoiceBox fx:id="pureecb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <ChoiceBox fx:id="somloicb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <ChoiceBox fx:id="poharkcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <ChoiceBox fx:id="dobostcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="30.0" layoutY="705.0" prefHeight="146.0" prefWidth="498.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.2000457763672" minWidth="10.0" prefWidth="331.0000335693359" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.40003356933596" minWidth="0.0" prefWidth="128.7999938964844" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="297.3999938964844" minWidth="10.0" prefWidth="32.0000061035156" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label fx:id="limonadeName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
+                        <Label fx:id="uditoekName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
+                        <Label fx:id="limonadePrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
+                        <Label fx:id="uditoekPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="sodaName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
+                        <Label fx:id="sodaPrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="borokName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
+                        <Label fx:id="borokPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="palinkaName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
+                        <Label fx:id="palinkaPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="forrokName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
+                        <Label fx:id="forrokPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ChoiceBox fx:id="limonadecb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
+                        <ChoiceBox fx:id="uditoekcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <ChoiceBox fx:id="sodacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <ChoiceBox fx:id="borokcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <ChoiceBox fx:id="palinkacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <ChoiceBox fx:id="forrokcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                     </children>
+                  </GridPane>
+                  <Label layoutX="16.0" layoutY="15.0" text="Üdvözöllek" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -9,7 +9,7 @@ public class Leves
     private String name;
     private int price;
 
-    public static Leves scannedFood(LevesDataReader leves){
+    public static Leves scannedLeves(LevesDataReader leves){
         String name;
         int price;
         name = leves.getName();
