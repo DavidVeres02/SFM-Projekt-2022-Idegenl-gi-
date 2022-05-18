@@ -853,26 +853,13 @@ public class FXMLMenuPageController {
      */
     @FXML
     void HandledOrderButtonPushed(ActionEvent event) throws IOException {
-        for (int i = 0; i < leveschb.size(); i++)
-        {
-            if ((int)(leveschb.get(i)).getValue() != 0)
-            {
-                int darab = (int)(leveschb.get(i)).getValue();
-                FXMLOrderPageController.kajaRendeles(i,darab);
-            }
-        }
-        /*
-        for (int j = 0; j < etelchb.size(); j++)
-        {
-            if ((int)(etelchb.get(j)).getValue() != 0)
-            {
-                int darab = (int)(etelchb.get(j)).getValue();
-                FXMLOrderPageController.italRendeles(j,darab);
-            }
-        }
-         */
-        FXMLOrderPageController.Kiir();
-        //FXMLOrderPageController.OsszegKiir();
+        FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("/fxml/FXMLOrderPage.fxml"));
+        Scene scene = new Scene(loader.load());
+        Stage stage = new Stage();
+        Stage stage2 = (Stage)buttonVissza.getScene().getWindow();
+        stage2.close();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML

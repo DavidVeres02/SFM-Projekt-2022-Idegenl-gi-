@@ -63,6 +63,7 @@ public class FXMLLogPageController {
                 GridpaneUDesszert();
                 GridpaneUdito();
             }
+            else{}
         }
 
         private boolean ValidateUser(String username, String password){

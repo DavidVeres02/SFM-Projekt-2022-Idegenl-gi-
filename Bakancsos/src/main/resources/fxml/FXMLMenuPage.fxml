@@ -11,7 +11,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLMenuPageController">
    <children>
       <ScrollPane prefHeight="584.0" prefWidth="619.0">
@@ -25,17 +24,17 @@
                   </Text>
                   <Text fill="WHITE" layoutX="30.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Főételek">
                      <font>
-                        <Font name="System Italic" size="18.0" />
+                        <Font name="Times New Roman Italic" size="18.0" />
                      </font>
                   </Text>
                   <Text fill="WHITE" layoutX="30.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Desszert">
                      <font>
-                        <Font name="System Italic" size="18.0" />
+                        <Font name="Times New Roman Italic" size="18.0" />
                      </font>
                   </Text>
                   <Text fill="WHITE" layoutX="30.0" layoutY="700.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Italok">
                      <font>
-                        <Font name="System Italic" size="18.0" />
+                        <Font name="Times New Roman Italic" size="18.0" />
                      </font>
                   </Text>
                   <Button fx:id="buttonRendel" layoutX="328.0" layoutY="891.0" mnemonicParsing="false" onAction="#HandledOrderButtonPushed" text="Tovább a megrendeléshez">
@@ -45,7 +44,7 @@
                   </Button>
                   <Text fill="WHITE" layoutX="30.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Levesek">
                      <font>
-                        <Font name="System Italic" size="18.0" />
+                        <Font name="Times New Roman Italic" size="18.0" />
                      </font>
                   </Text>
                   <Text fill="WHITE" layoutX="222.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
@@ -74,18 +73,54 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label fx:id="gulyasName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
-                        <Label fx:id="borsoName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
-                        <Label fx:id="gulyasPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
-                        <Label fx:id="borsoPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="hagymaName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
-                        <Label fx:id="hagymaPrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="ujhaziName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
-                        <Label fx:id="ujhaziPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="gyumolcsName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
-                        <Label fx:id="gyumolcsPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="paradicsName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
-                        <Label fx:id="paradicsPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="gulyasName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="borsoName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="gulyasPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="borsoPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="hagymaName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="hagymaPrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="ujhaziName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="ujhaziPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="gyumolcsName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="gyumolcsPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="paradicsName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
+                        <Label fx:id="paradicsPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font></Label>
                         <ChoiceBox fx:id="gulyascb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
                         <ChoiceBox fx:id="borsocb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                         <ChoiceBox fx:id="hagymacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
@@ -109,18 +144,54 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Label fx:id="sztraoaName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
-                        <Label fx:id="matraiName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
-                        <Label fx:id="sztraoaPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
-                        <Label fx:id="matraiPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="mmcsirkeName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
-                        <Label fx:id="mmcsirkePrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="marhaName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
-                        <Label fx:id="marhaPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="toltottName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
-                        <Label fx:id="toltottPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="csuszaName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
-                        <Label fx:id="csuszaPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="sztraoaName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="matraiName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="sztraoaPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="matraiPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="mmcsirkeName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="mmcsirkePrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="marhaName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="marhaPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="toltottName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="toltottPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="csuszaName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="csuszaPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
                         <ChoiceBox fx:id="sztraoacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
                         <ChoiceBox fx:id="matraicb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                         <ChoiceBox fx:id="mmcsirkecb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
@@ -144,18 +215,54 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Label fx:id="gundelpName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
-                        <Label fx:id="makosName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
-                        <Label fx:id="gundelpPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
-                        <Label fx:id="makosPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="pureeName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
-                        <Label fx:id="pureePrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="somloiName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
-                        <Label fx:id="somloiPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="poharkName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
-                        <Label fx:id="poharkPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="dobostName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
-                        <Label fx:id="dobostPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="gundelpName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="makosName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="gundelpPrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="makosPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="pureeName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="pureePrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="somloiName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="somloiPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="poharkName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="poharkPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="dobostName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="dobostPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
                         <ChoiceBox fx:id="gundelcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
                         <ChoiceBox fx:id="makoscb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                         <ChoiceBox fx:id="pureecb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
@@ -179,18 +286,54 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                      <children>
-                        <Label fx:id="limonadeName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE" />
-                        <Label fx:id="uditoekName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1" />
-                        <Label fx:id="limonadePrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1" />
-                        <Label fx:id="uditoekPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Label fx:id="sodaName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2" />
-                        <Label fx:id="sodaPrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Label fx:id="borokName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3" />
-                        <Label fx:id="borokPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Label fx:id="palinkaName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4" />
-                        <Label fx:id="palinkaPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Label fx:id="forrokName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5" />
-                        <Label fx:id="forrokPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="limonadeName" prefHeight="18.0" prefWidth="334.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="uditoekName" prefHeight="18.0" prefWidth="347.0" textFill="WHITE" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="limonadePrice" prefHeight="18.0" prefWidth="142.0" textFill="WHITE" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="uditoekPrice" prefHeight="18.0" prefWidth="167.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="sodaName" prefHeight="18.0" prefWidth="359.0" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="sodaPrice" prefHeight="18.0" prefWidth="198.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="borokName" prefHeight="18.0" prefWidth="346.0" textFill="WHITE" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="borokPrice" prefHeight="18.0" prefWidth="147.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="palinkaName" prefHeight="18.0" prefWidth="375.0" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="palinkaPrice" prefHeight="18.0" prefWidth="141.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="forrokName" prefHeight="18.0" prefWidth="567.0" textFill="WHITE" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
+                        <Label fx:id="forrokPrice" prefHeight="18.0" prefWidth="145.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Label>
                         <ChoiceBox fx:id="limonadecb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" />
                         <ChoiceBox fx:id="uditoekcb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
                         <ChoiceBox fx:id="sodacb" prefHeight="26.0" prefWidth="21.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />

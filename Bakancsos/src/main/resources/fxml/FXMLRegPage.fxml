@@ -9,7 +9,6 @@
 
 <AnchorPane id="hatter" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../styles/RegPageStyles.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.FXMLRegPageController">
    <children>
-      <TextField fx:id="usern" layoutX="241.0" layoutY="261.0" />
       <Text layoutX="260.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Felhasználónév">
          <font>
             <Font name="Times New Roman Italic" size="18.0" />
@@ -42,6 +41,7 @@
       </Text>
       <TextField fx:id="sname" layoutX="241.0" layoutY="123.0" />
       <TextField fx:id="gname" layoutX="241.0" layoutY="174.0" />
+      <TextField fx:id="usern" layoutX="241.0" layoutY="261.0" />
       <PasswordField fx:id="passw" layoutX="241.0" layoutY="308.0" />
       <Text layoutX="238.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bakancsos Étterem">
          <font>

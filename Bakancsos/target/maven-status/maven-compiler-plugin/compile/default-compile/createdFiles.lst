@@ -1,4 +1,5 @@
 hu\unideb\inf\FXMLLogPageController.class
+hu\unideb\inf\FXMLOrderPageController.class
 hu\unideb\inf\Main.class
 hu\unideb\inf\model\JPAUsersDAO.class
 hu\unideb\inf\model\Users.class
