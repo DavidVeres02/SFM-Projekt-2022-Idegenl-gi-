@@ -858,6 +858,7 @@ public class FXMLMenuPageController {
         Stage stage = new Stage();
         Stage stage2 = (Stage)buttonVissza.getScene().getWindow();
         stage2.close();
+        stage.setTitle("Order Page");
         stage.setScene(scene);
         stage.show();
     }
@@ -870,6 +871,7 @@ public class FXMLMenuPageController {
         Stage stage = new Stage();
         Stage stage2 = (Stage)buttonVissza.getScene().getWindow();
         stage2.close();
+        stage.setTitle("Login Page");
         stage.setScene(scene);
         stage.show();
     }
